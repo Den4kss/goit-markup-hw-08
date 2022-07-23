@@ -1,0 +1,284 @@
+/* body */
+/* Blok 1 */
+.main{
+    &__hero {
+    text-align: center;
+    background-color: #2F303A;
+    padding: 200px 0;
+    }
+    &__hero-bg {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url("../images/hero/overlay.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    }
+
+    &__section {
+    padding: 94px 0px;
+    }
+
+    &__reset {
+    padding-bottom: 0px;
+    }
+}
+
+.container{
+    &__title {
+    max-width: 696px;
+    margin: 0 auto 0 auto;
+    padding-bottom: 30px;
+
+    @include font($family, $style: normal, $weight: 900, $size: 44px);
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    }
+    &__lessons {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    color: var(--title-text-color);
+
+    @include font($family, $style, $weight: 700, $size: 36px);
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    }
+    &__regular-customers {
+    margin: 0px;
+    margin-bottom: 50px;
+
+    @include font($family: Roboto, $style: normal, $weight: 700, $size: 36px);
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--title-text-color);
+    }
+    &__our-team {
+    margin-top: 0px;
+    margin-bottom: 50px;
+
+    color: var(--title-text-color);
+
+    @include font($family, $style, $weight: 700, $size: 36px);
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    }
+}
+.features {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.features-item {
+    width: 270px;
+    margin-right: 30px;
+     &:nth-child(4n) {
+    margin-right: 0px;}
+    &__icon {
+    width: 70px;
+    height: 70px;
+    }
+    &__icon-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    margin-bottom: 30px;
+
+    background: #F5F4FA;
+    border-radius: 4px;
+    }
+     &__title {
+    margin: 0px;
+
+    color: var(--title-text-color);
+    text-transform: uppercase;
+
+    font-weight: 700;
+    line-height: 1.14;
+    }
+
+    &__text {
+    color: var(--primari-text-color);
+
+    font-weight: 400;
+    line-height: 1.71;
+    }
+}
+
+.team {
+    background-color: #F5F4FA;
+}
+
+.img-item {
+    display: flex;
+    margin-right: 30px;
+    position: relative;
+    &__desc {
+    background: rgba(47, 48, 58, 0.8);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding: 27px 0px;
+    margin: 0px;
+    text-align: center;
+    height: 70px;
+    width: 100%;
+
+    @include font($family: Roboto, $style: normal, $weight: 700, $size: 14px);
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    }
+
+    &:nth-child(3n) {
+    margin-right: 0px;
+    }
+}
+
+.img-work {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
+}
+.button {
+    border: 1px solid transparent;
+    text-align: center;
+    border-radius: 4px;
+    padding: 10px 32px;
+
+    color: var(--primari-white-color);
+    background-color: var(--accent-color);
+    @include font($family, $style, $weight: 700, $size: 16px);
+    line-height: 30px;
+    transition: background-color 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+    background-color: #188CE8;
+    }
+}
+
+
+.buttons {
+    transition: 250ms var(--timing-function);
+    padding: 6px 22px;
+    color: var(--title-text-color);
+    background-color: #F5F4FA;
+    cursor: pointer;
+    border: none;
+
+    border-radius: 4px;
+
+    @include font($family, $style, $weight: 500, $size: 16px);
+    line-height: 26px;
+    .current,
+    &:hover,
+    &:focus {
+    color: var(--primari-white-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
+    }
+}
+/* Blok 5 */
+.regular {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    gap: 30px;
+}
+.customers{
+    &__icon-group {
+    max-width: 106px;
+    max-height: 60px;
+    fill: currentColor;
+    }
+
+    &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    color: #AFB1B8;
+    transition: color 250ms var(--timing-function), border-color 250ms var(--timing-function);
+    }
+
+    &__link:hover,
+    &__link:focus {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+    }
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.comand {
+    background: #FFFFFF;
+    display: inline-block;
+    margin-right: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    &:nth-child(4n) {
+    margin-right: 0px;
+    }
+    &__box {
+    margin: 0px;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    }
+
+    &__name {
+    margin: 0px;
+    margin-bottom: 10px;
+    text-align: center;
+
+    color: var(--title-text-color);
+
+    @include font($family, $style, $weight: 500, $size: 16px);
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    }
+
+    &__specialist {
+    margin: 0px;
+    margin-bottom: 16px;
+    text-align: center;
+
+    color: var(--primari-text-color);
+
+    @include font($family, $style, $weight: 400, $size: 16px);
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    }
+}
+
+.comands {
+    padding: 0px;
+    margin: 0pt;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
