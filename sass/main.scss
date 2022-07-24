@@ -1,10 +1,17 @@
-@import "./base/normalize";
-@import "./utils/variables";
-@import "./utils/mixin";
-@import "./utils/standart";
-@import "./components/Studio/header";
-@import "./components/Studio/main-part";
-@import "./components/Studio/footer";
-@import "./components/Studio/social";
-@import "./components/Studio/modal";
-@import "./components/portfolio/portfolio";
+@import './base/normalize';
+@import './utils/variables';
+@import './utils/mixin';
+@import './utils/standart';
+@import './components/header';
+@import './components/hero';
+@import './components/feature';
+@import './components/lessons';
+@import "./components/modal";
+@import "./components/footer";
+// @import "./components/blok/mobile-menu";
+// @import "./components/Studio/header";
+// @import "./components/Studio/main-part";
+
+// @import "./components/Studio/social";
+
+// @import "./components/portfolio/portfolio";

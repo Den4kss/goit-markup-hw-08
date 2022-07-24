@@ -1,0 +1,205 @@
+//Mobile
+.page-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.box-logo {
+  display: block;
+  padding: 0px;
+}
+.logo {
+  color: var(--title-text-color);
+  @include font($family: Raleway, $style: sans-serif, $weight: 700, $size: 26px);
+  line-height: 1.19;
+  text-decoration: none;
+}
+.logo-web {
+  color: var(--accent-color);
+}
+.menu-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  transition: box-shadow 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
+.mobile-burger-block {
+  position: absolute;
+  top: 0;
+  transform: translateX(200%);
+  transition: 250ms;
+  padding: 48px 40px;
+  background-color: var(--primari-white-color);
+}
+.is-open {
+  width: 100%;
+  z-index: 1000;
+  transform: translateX(0);
+}
+.mobile-btn-close {
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+
+.box-menu {
+  margin-bottom: 300px;
+  @include font($size: 40px);
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  & .item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  & .nav {
+    color: var(--title-text-color);
+  }
+  & .nav-current .nav {
+    color: var(--accent-color);
+  }
+}
+.header-contact {
+  margin-bottom: 64px;
+  & .item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  & .icon-header {
+    display: none;
+  }
+}
+.tel-contact {
+  @include font($size: 34px);
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+.email-contact {
+  @include font($size: 24px);
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: var(--primari-text-color);
+}
+.mobile-menu-socials {
+  display: flex;
+  margin-left: -10px;
+}
+.mobile-menu-socials__item {
+  padding: 0 10px;
+  @include font($size: 18px);
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  &:not(:last-child) {
+    border-right: 1px solid var(--primari-text-color);
+  }
+  & a {
+    color: var(--accent-color);
+  }
+}
+
+//Tablet
+
+@media screen and (min-width: 768px) {
+  .page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .box-logo {
+    display: block;
+    padding: 0px;
+  }
+  .logo {
+    color: var(--title-text-color);
+    @include font($family: Raleway, $style: sans-serif, $weight: 700, $size: 26px);
+    line-height: 1.19;
+    text-decoration: none;
+  }
+  .logo-web {
+    color: var(--accent-color);
+  }
+  .menu-toggle {
+    display: none;
+  }
+  .mobile-burger-block {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    width: 70%;
+    transform: translateX(0);
+  }
+  .box-menu {
+    margin: 0px;
+    padding: 0px;
+    @include font();
+    line-height: 16px;
+    letter-spacing: 0.02em;
+  }
+  .menu {
+    display: flex;
+
+    gap: 50px;
+    & .item {
+      margin: 0 !important;
+      padding: 28px 0;
+    }
+    & .nav-current {
+      border-bottom: 4px solid var(--accent-color);
+      border-radius: 4px;
+    }
+  }
+  .header-contact {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    margin: 0;
+    & .item {
+      margin: 0 !important;
+      &:hover .contact,
+      &:focus .contact {
+        color: var(--accent-color);
+        & .icon-header {
+          fill: var(--accent-color);
+        }
+      }
+    }
+    & .icon-header {
+      display: inline-block;
+      margin-right: 8px;
+      width: 14px;
+      height: 10px;
+      fill: var(--primari-text-color);
+    }
+  }
+  .tel-contact,
+  .email-contact {
+    @include font($size: 12px);
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    color: var(--primari-text-color);
+  }
+  .mobile-menu-socials {
+    display: none;
+  }
+}
+
+//Desctop
+
+@media screen and (min-width: 1200px) {
+  .header-contact {
+    flex-direction: row-reverse;
+    gap: 30px;
+    & .icon-header {
+      margin-right: 10px;
+    }
+  }
+}
