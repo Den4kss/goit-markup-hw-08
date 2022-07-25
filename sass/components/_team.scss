@@ -1,5 +1,6 @@
 //Mobile
 .container-team {
+  @extend .container;
   background-color: #f5f4fa;
 }
 .container__our-team {

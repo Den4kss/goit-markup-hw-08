@@ -134,15 +134,42 @@
           <h2 class="container__lessons">Чем мы занимаемся</h2>
           <ul class="img-work">
             <li class="img-item">
-              <a href=""><img src="./images/blok_4/imss2.jpg" alt="user photo" width="370" /></a>
+              <a href="">
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset=".\images-1\desktop\work-1.jpg 1x, .\images-1\desktop\work-1@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <img src=".\images-1\desktop\work-1.jpg 1x" alt="user photo" width="370" />
+                </picture>
+              </a>
               <p class="img-item__desc">Десктопные приложения</p>
             </li>
             <li class="img-item">
-              <a href=""><img src="./images/blok_4/imss3.jpg" alt="user photo_1" width="370" /></a>
+              <a href="">
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset=".\images-1\desktop\work-2.jpg 1x, .\images-1\desktop\work-2@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <img src=".\images-1\desktop\work-2.jpg" alt="user photo_1" width="370" />
+                </picture>
+              </a>
               <p class="img-item__desc">Мобильные приложения</p>
             </li>
             <li class="img-item">
-              <a href=""><img src="./images/blok_4/imss4.jpg" alt="user pfoto_2" width="370" /></a>
+              <a href="">
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset=".\images-1\desktop\work-3.jpg 1x, .\images-1\desktop\work-3@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <img src="./images-1/desktop/work-3.jpg" alt="user pfoto_2" width="370" />
+                </picture>
+              </a>
               <p class="img-item__desc">Дизайнерские решения</p>
             </li>
           </ul>
@@ -153,7 +180,27 @@
         <h2 class="container__our-team">Наша команда</h2>
         <ul class="comands">
           <li class="comand">
-            <img src="./images/blok5/img10.jpg" alt="user photo" />
+            <picture>
+              <!-- desktop screen -->
+              <source
+                media="(min-width: 1200px)"
+                srcset=".\images-1\desktop\team-1.jpg, .\images-1\desktop\team-1@2x.jpg"
+                type="image/jpg"
+              />
+              <!-- tablet screen -->
+              <source
+                media="(min-width: 768px)"
+                srcset=".\images-1\tablet\team-1.jpg, .\images-1\tablet\team-1@2x.jpg"
+                type="image/jpg"
+              />
+              <!-- mobile screen -->
+              <source
+                media="(max-width: 767px)"
+                srcset=".\images-1\mobile\team-1.jpg, .\images-1\mobile\team-1@2x.jpg"
+                type="image/jpg"
+              />
+              <img src=".\images-1\tablet\team-1.jpg" alt="user photo" width="450" height="460" />
+            </picture>
             <h3 class="comand__name">Игорь Демьяненко</h3>
             <p lang="en" class="comand__specialist">Product Designer</p>
             <ul class="social-media">
@@ -212,7 +259,27 @@
             </ul>
           </li>
           <li class="comand">
-            <img src="./images/blok5/img11.jpg" alt="user photo" />
+            <picture>
+              <!-- desktop screen -->
+              <source
+                media="(min-width: 1200px)"
+                srcset=".\images-1\desktop\team-2.jpg, .\images-1\desktop\team-2@2x.jpg"
+                type="image/jpg"
+              />
+              <!-- tablet screen -->
+              <source
+                media="(min-width: 768px)"
+                srcset=".\images-1\tablet\team-2.jpg, .\images-1\tablet\team-2@2x.jpg"
+                type="image/jpg"
+              />
+              <!-- mobile screen -->
+              <source
+                media="(max-width: 767px)"
+                srcset=".\images-1\mobile\team-2.jpg, .\images-1\mobile\team-2@2x.jpg"
+                type="image/jpg"
+              />
+              <img src=".\images-1\mobile\team-2.jpg" alt="user photo" width="450" height="460" />
+            </picture>
 
             <div class="comand__box">
               <h3 class="comand__name">Ольга Репина</h3>
@@ -274,7 +341,27 @@
             </div>
           </li>
           <li class="comand">
-            <img src="./images/blok5/img12.jpg" alt="user photo" />
+            <picture>
+              <!-- desktop screen -->
+              <source
+                media="(min-width: 1200px)"
+                srcset=".\images-1\desktop\team-3.jpg, .\images-1\desktop\team-3@2x.jpg"
+                type="image/jpg"
+              />
+              <!-- tablet screen -->
+              <source
+                media="(min-width: 768px)"
+                srcset=".\images-1\tablet\team-3.jpg, .\images-1\tablet\team-3@2x.jpg"
+                type="image/jpg"
+              />
+              <!-- mobile screen -->
+              <source
+                media="(max-width: 767px)"
+                srcset=".\images-1\mobile\team-3.jpg, .\images-1\mobile\team-3@2x.jpg"
+                type="image/jpg"
+              />
+              <img src=".\images-1\mobile\team-3.jpg" alt="user photo" width="450" height="460" />
+            </picture>
 
             <div class="comand__box">
               <h3 class="comand__name">Николай Тарасов</h3>
@@ -336,8 +423,27 @@
             </div>
           </li>
           <li class="comand">
-            <img src="./images/blok5/img13.jpg" alt="user photo" />
-
+            <picture>
+              <!-- desktop screen -->
+              <source
+                media="(min-width: 1200px)"
+                srcset=".\images-1\desktop\team-4.jpg, .\images-1\desktop\team-4@2x.jpg"
+                type="image/jpg"
+              />
+              <!-- tablet screen -->
+              <source
+                media="(min-width: 768px)"
+                srcset=".\images-1\tablet\team-4@.jpg, .\images-1\tablet\team-4@2x.jpg"
+                type="image/jpg"
+              />
+              <!-- mobile screen -->
+              <source
+                media="(max-width: 767px)"
+                srcset=".\images-1\mobile\team-4.jpg, .\images-1\mobile\team-4@2x.jpg"
+                type="image/jpg"
+              />
+              <img src=".\images-1\mobile\team-4.jpg" alt="user photo" width="450" height="460" />
+            </picture>
             <div class="comand__box">
               <h3 class="comand__name">Михаил Ермаков</h3>
               <p lang="en" class="comand__specialist">UI Designer</p>

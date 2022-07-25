@@ -12,61 +12,66 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="page-header">
-      <div class="box-logo">
-        <a href="" class="logo"><span class="logo-web">Web</span>Studio</a>
-      </div>
+    <header class="line">
+      <div class="page-header">
+        <div class="box-logo">
+          <a href="" class="logo"><span class="logo-web">Web</span>Studio</a>
+        </div>
 
-      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-        <svg class="mobile-menu-icon" width="24" height="16">
-          <use class="mobile-menu-burger" href="./images/symbol-defs.svg#icon-menu-mobile"></use>
-        </svg>
-      </button>
-
-      <div class="mobile-burger-block js-menu-container">
-        <button
-          class="menu-toggle js-close-menu mobile-btn-close"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <svg class="mobile-menu-icon" width="19" height="19">
-            <use class="mobile-menu-close" href="./images/symbol-defs.svg#icon-close-mobile"></use>
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="mobile-menu-icon" width="24" height="16">
+            <use class="mobile-menu-burger" href="./images/symbol-defs.svg#icon-menu-mobile"></use>
           </svg>
         </button>
 
-        <nav class="box-menu">
-          <ul class="menu">
-            <li class="item"><a href="./index.html" class="nav">Студия</a></li>
-            <li class="item nav-current"><a href="" class="nav">Портфолио</a></li>
-            <li class="item"><a href="" class="nav">Контакты</a></li>
+        <div class="mobile-burger-block js-menu-container">
+          <button
+            class="menu-toggle js-close-menu mobile-btn-close"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="mobile-menu-icon" width="19" height="19">
+              <use
+                class="mobile-menu-close"
+                href="./images/symbol-defs.svg#icon-close-mobile"
+              ></use>
+            </svg>
+          </button>
+
+          <nav class="box-menu">
+            <ul class="menu">
+              <li class="item"><a href="./index.html" class="nav">Студия</a></li>
+              <li class="item nav-current"><a href="" class="nav">Портфолио</a></li>
+              <li class="item"><a href="" class="nav">Контакты</a></li>
+            </ul>
+          </nav>
+
+          <ul class="header-contact">
+            <li class="item">
+              <a href="tel:+380961111111" class="contact tel-contact">
+                <svg class="icon-header" width="10" height="16">
+                  <use href="./images/symbol-defs.svg#icon-Vector"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+            <li class="item">
+              <a href="mailto:info@devstudio.com" class="contact email-contact">
+                <svg class="icon-header" width="16" height="12">
+                  <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
           </ul>
-        </nav>
 
-        <ul class="header-contact">
-          <li class="item">
-            <a href="tel:+380961111111" class="contact tel-contact">
-              <svg class="icon-header" width="10" height="16">
-                <use href="./images/symbol-defs.svg#icon-Vector"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="contact email-contact">
-              <svg class="icon-header" width="16" height="12">
-                <use href="./images/symbol-defs.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-        </ul>
-
-        <ul class="mobile-menu-socials">
-          <li class="mobile-menu-socials__item"><a href="">Instagram</a></li>
-          <li class="mobile-menu-socials__item"><a href="">Twitter</a></li>
-          <li class="mobile-menu-socials__item"><a href="">Facebook</a></li>
-          <li class="mobile-menu-socials__item"><a href="">LinkedIn</a></li>
-        </ul>
+          <ul class="mobile-menu-socials">
+            <li class="mobile-menu-socials__item"><a href="">Instagram</a></li>
+            <li class="mobile-menu-socials__item"><a href="">Twitter</a></li>
+            <li class="mobile-menu-socials__item"><a href="">Facebook</a></li>
+            <li class="mobile-menu-socials__item"><a href="">LinkedIn</a></li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -93,7 +98,28 @@
             <li class="group">
               <a href="" class="blok">
                 <div class="blok-img">
-                  <img src="./images/portfolio/notebook.jpg" alt="notebook" />
+                  <picture>
+                    <!-- desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset=".\images-1\desktop\project-1.jpg, .\images-1\desktop\project-1@2x.jpg"
+                      type="image/jpg"
+                    />
+                    <!-- tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset=".\images-1\tablet\project-1.jpg, .\images-1\tablet\project-1@2x.jpg"
+                      type="image/jpg"
+                    />
+                    <!-- mobile screen -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset=".\images-1\mobile\project-1.jpg, .\images-1\mobile\project-1@2x.jpg"
+                      type="image/jpg"
+                    />
+                    <img src=".\images-1\mobile\project-1.jpg" alt="notebook" />
+                  </picture>
+
                   <div class="portfolio-overlay">
                     <p class="portfolio-desc">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -111,7 +137,28 @@
             <li class="group">
               <a href="" class="blok">
                 <div class="blok-img">
-                  <img src="./images/portfolio/basketball.jpg" alt="basketball" />
+                  <picture>
+                    <!-- desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset=".\images-1\desktop\project-2.jpg, .\images-1\desktop\project-2@2x.jpg"
+                      type="image/jpg"
+                    />
+                    <!-- tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset=".\images-1\tablet\project-2.jpg, .\images-1\tablet\project-2@2x.jpg"
+                      type="image/jpg"
+                    />
+                    <!-- mobile screen -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset=".\images-1\mobile\project-2.jpg, .\images-1\mobile\project-2@2x.jpg"
+                      type="image/jpg"
+                    />
+                    <img src=".\images-1\mobile\project-2.jpg" alt="basketball" />
+                  </picture>
+
                   <div class="portfolio-overlay">
                     <p class="portfolio-desc">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -129,7 +176,27 @@
             <li class="group">
               <a href="" class="blok">
                 <div class="blok-img">
-                  <img src="./images/portfolio/Seafood.jpg" alt="Seafood" />
+                  <picture>
+                    <!-- desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset=".\images-1\desktop\project-3.jpg, .\images-1\desktop\project-3@2x.jpg"
+                      type="image/jpg"
+                    />
+                    <!-- tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset=".\images-1\tablet\project-3.jpg, .\images-1\tablet\project-3@2x.jpg"
+                      type="image/jpg"
+                    />
+                    <!-- mobile screen -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset=".\images-1\mobile\project-3.jpg, .\images-1\mobile\project-3@2x.jpg"
+                      type="image/jpg"
+                    />
+                    <img src=".\images-1\mobile\project-3.jpg" alt="Seafood" />
+                  </picture>
                   <div class="portfolio-overlay">
                     <p class="portfolio-desc">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -147,7 +214,27 @@
             <li class="group">
               <a href="" class="blok">
                 <div class="blok-img">
-                  <img src="./images/portfolio/headphones.jpg" alt="headphones" />
+                  <picture>
+                    <!-- desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset=".\images-1\desktop\project-4.jpg, .\images-1\desktop\project-4@2x.jpg"
+                      type="image/jpg"
+                    />
+                    <!-- tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset=".\images-1\tablet\project-4.jpg, .\images-1\tablet\project-4@2x.jpg"
+                      type="image/jpg"
+                    />
+                    <!-- mobile screen -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset=".\images-1\mobile\project-4.jpg, .\images-1\mobile\project-4@2x.jpg"
+                      type="image/jpg"
+                    />
+                    <img src="./images-1\mobile\project-4.jpg" alt="headphones" />
+                  </picture>
                   <div class="portfolio-overlay">
                     <p class="portfolio-desc">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -165,7 +252,27 @@
             <li class="group">
               <a href="" class="blok">
                 <div class="blok-img">
-                  <img src="./images/portfolio/Boxes.jpg" alt="Boxes" />
+                  <picture>
+                    <!-- desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset=".\images-1\desktop\project-5.jpg, .\images-1\desktop\project-5@2x.jpg"
+                      type="image/jpg"
+                    />
+                    <!-- tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset=".\images-1\tablet\project-5.jpg, .\images-1\tablet\project-5@2x.jpg"
+                      type="image/jpg"
+                    />
+                    <!-- mobile screen -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset=".\images-1\mobile\project-5.jpg, .\images-1\mobile\project-5@2x.jpg"
+                      type="image/jpg"
+                    />
+                    <img src=".\images-1\mobile\project-5.jpg" alt="Boxes" />
+                  </picture>
                   <div class="portfolio-overlay">
                     <p class="portfolio-desc">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -183,7 +290,27 @@
             <li class="group">
               <a href="" class="blok">
                 <div class="blok-img">
-                  <img src="./images/portfolio/monitor.jpg" alt="monitor" />
+                  <picture>
+                    <!-- desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset=".\images-1\desktop\project-6.jpg, .\images-1\desktop\project-6@2x.jpg"
+                      type="image/jpg"
+                    />
+                    <!-- tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset=".\images-1\tablet\project-6.jpg, .\images-1\tablet\project-6@2x.jpg"
+                      type="image/jpg"
+                    />
+                    <!-- mobile screen -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset=".\images-1\mobile\project-6.jpg, .\images-1\mobile\project-6@2x.jpg"
+                      type="image/jpg"
+                    />
+                    <img src="./images-1\mobile\project-6.jpg" alt="monitor" />
+                  </picture>
                   <div class="portfolio-overlay">
                     <p class="portfolio-desc">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -201,7 +328,27 @@
             <li class="group">
               <a href="" class="blok">
                 <div class="blok-img">
-                  <img src="./images/portfolio/design.jpg" alt="design" />
+                  <picture>
+                    <!-- desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset=".\images-1\desktop\project-7.jpg, .\images-1\desktop\project-7@2x.jpg"
+                      type="image/jpg"
+                    />
+                    <!-- tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset=".\images-1\tablet\project-7.jpg, .\images-1\tablet\project-7@2x.jpg"
+                      type="image/jpg"
+                    />
+                    <!-- mobile screen -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset=".\images-1\mobile\project-7.jpg, .\images-1\mobile\project-7@2x.jpg"
+                      type="image/jpg"
+                    />
+                    <img src=".\images-1\mobile\project-7.jpg" alt="design" />
+                  </picture>
                   <div class="portfolio-overlay">
                     <p class="portfolio-desc">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -219,7 +366,28 @@
             <li class="group">
               <a href="" class="blok">
                 <div class="blok-img">
-                  <img src="./images/portfolio/project.jpg" alt="project" />
+                  <picture>
+                    <!-- desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset=".\images-1\desktop\project-8.jpg, .\images-1\desktop\project-8@2x.jpg"
+                      type="image/jpg"
+                    />
+                    <!-- tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset=".\images-1\tablet\project-8.jpg, .\images-1\tablet\project-8@2x.jpg"
+                      type="image/jpg"
+                    />
+                    <!-- mobile screen -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset=".\images-1\mobile\project-8.jpg, .\images-1\mobile\project-8@2x.jpg"
+                      type="image/jpg"
+                    />
+                    <img src=".\images-1\mobile\project-8.jpg" alt="project" />
+                  </picture>
+
                   <div class="portfolio-overlay">
                     <p class="portfolio-desc">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -237,7 +405,27 @@
             <li class="group">
               <a href="" class="blok">
                 <div class="blok-img">
-                  <img src="./images/portfolio/applications.jpg" alt="applications" />
+                  <picture>
+                    <!-- desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset=".\images-1\desktop\project-9.jpg, .\images-1\desktop\project-9@2x.jpg"
+                      type="image/jpg"
+                    />
+                    <!-- tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset=".\images-1\tablet\project-9.jpg, .\images-1\tablet\project-9@2x.jpg"
+                      type="image/jpg"
+                    />
+                    <!-- mobile screen -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset=".\images-1\mobile\project-9.jpg, .\images-1\mobile\project-9@2x.jpg"
+                      type="image/jpg"
+                    />
+                    <img src=".\images-1\mobile\project-9.jpg" alt="applications" />
+                  </picture>
                   <div class="portfolio-overlay">
                     <p class="portfolio-desc">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
