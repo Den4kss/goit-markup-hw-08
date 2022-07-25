@@ -1,6 +1,5 @@
 .container-features {
-@extend .container;
-  padding: 60px 15px;
+  @extend .container;
 }
 
 .features-item:not(:last-child) {

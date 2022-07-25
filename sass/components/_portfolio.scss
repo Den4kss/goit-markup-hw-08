@@ -1,0 +1,112 @@
+// // Mobile
+.container-portfolio {
+  @extend .container;
+}
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  padding: 0px;
+  gap: 15px 8px;
+}
+.buttons {
+  padding: 6px 22px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+
+  @include font($size: 16px);
+  line-height: 26px;
+  color: var(--title-text-color);
+  background-color: #f5f4fa;
+  transition: 250ms var(--timing-function);
+
+  .current,
+  &:hover,
+  &:focus {
+    color: var(--primari-white-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function),
+      box-shadow 250ms var(--timing-function);
+  }
+}
+.flex-group {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 30px;
+}
+.group {
+  max-width: 450px;
+  max-height: 404px;
+
+  &:hover .portfolio-overlay {
+    transform: translateY(0%);
+  }
+}
+.blok-img {
+  position: relative;
+  overflow: hidden;
+}
+.portfolio-overlay {
+  position: absolute;
+  padding: 77px 24px;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(33, 150, 243, 0.9);
+  transition: transform 250ms var(--timing-function);
+  transform: translateY(100%);
+}
+.portfolio-desc {
+  @include font($weight: 400, $size: 18px);
+  letter-spacing: 0.03em;
+
+  color: var(--primari-white-color);
+}
+.box-portfolio {
+  padding: 20px 24px;
+}
+.works {
+  margin: 0px;
+  margin-top: 4px;
+  color: var(--primari-text-color);
+  @include font($weight: 400, $size: 14px);
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
+.titels {
+  margin: 0px;
+
+  color: var(--title-text-color);
+  @include font($weight: 700, $size: 18px);
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+// Tablet
+@media screen and (min-width: 768px) {
+  .services {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .group {
+    width: 354px;
+    height: 440px;
+  }
+}
+// Desctop
+@media screen and (min-width: 1200px) {
+  .services {
+    margin-bottom: 50px;
+  }
+  .group {
+    width: 370px;
+    height: 404px;
+  }
+}
