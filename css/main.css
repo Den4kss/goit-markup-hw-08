@@ -299,7 +299,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .container, .container-portfolio, .container-client, .footer, .container-team, .container-features, .container-hero, .page-header {
-    max-width: 1200px;
+    min-width: 1200px;
   }
 }
 
@@ -490,6 +490,7 @@ a {
   .box-logo {
     display: block;
     padding: 0px;
+    margin-right: 88px !important;
   }
   .logo {
     color: var(--title-text-color);
@@ -518,7 +519,7 @@ a {
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding: 0px;
-    width: 70%;
+    width: 100%;
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
@@ -609,6 +610,27 @@ a {
   .header-contact .icon-header {
     margin-right: 10px;
   }
+  .box-logo {
+    margin-right: 93px !important;
+  }
+  .tel-contact {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: var(--primari-text-color);
+  }
+  .email-contact {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: var(--primari-text-color);
+  }
 }
 .container-hero {
   padding: 0;
@@ -640,7 +662,8 @@ a {
   font-style: normal;
   font-weight: 900;
   font-size: 26px;
-  line-height: 1.16;
+  line-height: 1.62;
+  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primari-white-color);
@@ -711,6 +734,15 @@ a {
 @media screen and (min-width: 1200px) {
   .main__hero {
     padding: 200px 452px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container-hero__title {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
   }
 }
 .features-item:not(:last-child) {
@@ -797,6 +829,9 @@ a {
   .features-item__icon {
     width: 70px;
     height: 70px;
+  }
+  .features-item__title {
+    text-align: start;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1233,9 +1268,13 @@ a {
     font-size: 14px;
   }
 }
+.footer-bgr {
+  width: 100%;
+  background-color: rgb(47, 48, 58);
+}
+
 .footer {
   text-align: center;
-  background-color: rgb(47, 48, 58);
   padding: 60px 0;
 }
 
@@ -1682,7 +1721,7 @@ a {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 2;
+  line-height: 1.8;
   letter-spacing: 0.06em;
 }
 
@@ -1702,6 +1741,9 @@ a {
   }
 }
 @media screen and (min-width: 1200px) {
+  .container-portfolio {
+    padding: 94px 15px;
+  }
   .services {
     margin-bottom: 50px;
   }

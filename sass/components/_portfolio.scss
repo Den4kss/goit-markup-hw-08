@@ -91,7 +91,7 @@
 
   color: var(--title-text-color);
   @include font($weight: 700, $size: 18px);
-  line-height: 2;
+  line-height: 1.8;
   letter-spacing: 0.06em;
 }
 // Tablet
@@ -108,6 +108,10 @@
 }
 // Desctop
 @media screen and (min-width: 1200px) {
+  .container-portfolio {
+    padding: 94px 15px;
+  }
+
   .services {
     margin-bottom: 50px;
   }

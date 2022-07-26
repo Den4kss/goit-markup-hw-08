@@ -23,7 +23,7 @@
         </svg>
       </button>
 
-      <div class="mobile-burger-block js-menu-container">
+      <div class="mobile-burger-block js-menu-container" id="mobile-menu">
         <button
           class="menu-toggle js-close-menu mobile-btn-close"
           aria-expanded="false"
@@ -36,7 +36,7 @@
 
         <nav class="box-menu">
           <ul class="menu">
-            <li class="item"><a href="" class="nav nav-current">Студия</a></li>
+            <li class="item nav-current"><a href="" class="nav">Студия</a></li>
             <li class="item"><a href="./portfolio.html" class="nav">Портфолио</a></li>
             <li class="item"><a href="" class="nav">Контакты</a></li>
           </ul>
@@ -137,11 +137,11 @@
               <a href="">
                 <picture>
                   <source
+                    srcset="./images-1/desktop/work-1.jpg 1x, ./images-1/desktop/work-1@2x.jpg 2x"
                     media="(min-width: 1200px)"
-                    srcset=".\images-1\desktop\work-1.jpg 1x, .\images-1\desktop\work-1@2x.jpg 2x"
                     type="image/jpg"
                   />
-                  <img src=".\images-1\desktop\work-1.jpg 1x" alt="user photo" width="370" />
+                  <img src="./images-1/desktop/work-1.jpg" alt="user photo" width="370" />
                 </picture>
               </a>
               <p class="img-item__desc">Десктопные приложения</p>
@@ -151,10 +151,10 @@
                 <picture>
                   <source
                     media="(min-width: 1200px)"
-                    srcset=".\images-1\desktop\work-2.jpg 1x, .\images-1\desktop\work-2@2x.jpg 2x"
+                    srcset="./images-1/desktop/work-2.jpg 1x, ./images-1/desktop/work-2@2x.jpg 2x"
                     type="image/jpg"
                   />
-                  <img src=".\images-1\desktop\work-2.jpg" alt="user photo_1" width="370" />
+                  <img src="./images-1/desktop/work-2.jpg" alt="user photo_1" width="370" />
                 </picture>
               </a>
               <p class="img-item__desc">Мобильные приложения</p>
@@ -164,7 +164,7 @@
                 <picture>
                   <source
                     media="(min-width: 1200px)"
-                    srcset=".\images-1\desktop\work-3.jpg 1x, .\images-1\desktop\work-3@2x.jpg 2x"
+                    srcset="./images-1/desktop/work-3.jpg 1x, ./images-1/desktop/work-3@2x.jpg 2x"
                     type="image/jpg"
                   />
                   <img src="./images-1/desktop/work-3.jpg" alt="user pfoto_2" width="370" />
@@ -184,22 +184,22 @@
               <!-- desktop screen -->
               <source
                 media="(min-width: 1200px)"
-                srcset=".\images-1\desktop\team-1.jpg, .\images-1\desktop\team-1@2x.jpg"
+                srcset="./images-1/desktop/team-1.jpg 1x, ./images-1/desktop/team-1@2x.jpg 2x"
                 type="image/jpg"
               />
               <!-- tablet screen -->
               <source
                 media="(min-width: 768px)"
-                srcset=".\images-1\tablet\team-1.jpg, .\images-1\tablet\team-1@2x.jpg"
+                srcset="./images-1/tablet/team-1.jpg 1x, ./images-1/tablet/team-1@2x.jpg 2x"
                 type="image/jpg"
               />
               <!-- mobile screen -->
               <source
                 media="(max-width: 767px)"
-                srcset=".\images-1\mobile\team-1.jpg, .\images-1\mobile\team-1@2x.jpg"
+                srcset="./images-1/mobile/m-team-1.jpg 1x, ./images-1/mobile/m-team-1@2x.jpg 2x"
                 type="image/jpg"
               />
-              <img src=".\images-1\tablet\team-1.jpg" alt="user photo" width="450" height="460" />
+              <img src="./images-1/tablet/team-1.jpg" alt="user photo" width="450" height="460" />
             </picture>
             <h3 class="comand__name">Игорь Демьяненко</h3>
             <p lang="en" class="comand__specialist">Product Designer</p>
@@ -263,22 +263,22 @@
               <!-- desktop screen -->
               <source
                 media="(min-width: 1200px)"
-                srcset=".\images-1\desktop\team-2.jpg, .\images-1\desktop\team-2@2x.jpg"
+                srcset="./images-1/desktop/team-2.jpg 1x, ./images-1/desktop/team-2@2x.jpg 2x"
                 type="image/jpg"
               />
               <!-- tablet screen -->
               <source
                 media="(min-width: 768px)"
-                srcset=".\images-1\tablet\team-2.jpg, .\images-1\tablet\team-2@2x.jpg"
+                srcset="./images-1/tablet/team-2.jpg 1x, ./images-1/tablet/team-2@2x.jpg 2x"
                 type="image/jpg"
               />
               <!-- mobile screen -->
               <source
                 media="(max-width: 767px)"
-                srcset=".\images-1\mobile\team-2.jpg, .\images-1\mobile\team-2@2x.jpg"
+                srcset="./images-1/mobile/team-2.jpg 1x, ./images-1/mobile/team-2@2x.jpg 2x"
                 type="image/jpg"
               />
-              <img src=".\images-1\mobile\team-2.jpg" alt="user photo" width="450" height="460" />
+              <img src="./images-1/mobile/team-2.jpg" alt="user photo" width="450" height="460" />
             </picture>
 
             <div class="comand__box">
@@ -345,22 +345,22 @@
               <!-- desktop screen -->
               <source
                 media="(min-width: 1200px)"
-                srcset=".\images-1\desktop\team-3.jpg, .\images-1\desktop\team-3@2x.jpg"
+                srcset="./images-1/desktop/team-3.jpg 1x, ./images-1/desktop/team-3@2x.jpg 2x"
                 type="image/jpg"
               />
               <!-- tablet screen -->
               <source
                 media="(min-width: 768px)"
-                srcset=".\images-1\tablet\team-3.jpg, .\images-1\tablet\team-3@2x.jpg"
+                srcset="./images-1/tablet/team-3.jpg 1x, ./images-1/tablet/team-3@2x.jpg 2x"
                 type="image/jpg"
               />
               <!-- mobile screen -->
               <source
                 media="(max-width: 767px)"
-                srcset=".\images-1\mobile\team-3.jpg, .\images-1\mobile\team-3@2x.jpg"
+                srcset="./images-1/mobile/team-3.jpg 1x, ./images-1/mobile/team-3@2x.jpg 2x"
                 type="image/jpg"
               />
-              <img src=".\images-1\mobile\team-3.jpg" alt="user photo" width="450" height="460" />
+              <img src="./images-1/mobile/team-3.jpg" alt="user photo" width="450" height="460" />
             </picture>
 
             <div class="comand__box">
@@ -427,22 +427,22 @@
               <!-- desktop screen -->
               <source
                 media="(min-width: 1200px)"
-                srcset=".\images-1\desktop\team-4.jpg, .\images-1\desktop\team-4@2x.jpg"
+                srcset="./images-1/desktop/team-4.jpg 1x, ./images-1/desktop/team-4@2x.jpg 2x"
                 type="image/jpg"
               />
               <!-- tablet screen -->
               <source
                 media="(min-width: 768px)"
-                srcset=".\images-1\tablet\team-4@.jpg, .\images-1\tablet\team-4@2x.jpg"
+                srcset="./images-1/tablet/team-4@.jpg 1x, ./images-1/tablet/team-4@2x.jpg 2x"
                 type="image/jpg"
               />
               <!-- mobile screen -->
               <source
                 media="(max-width: 767px)"
-                srcset=".\images-1\mobile\team-4.jpg, .\images-1\mobile\team-4@2x.jpg"
+                srcset="./images-1/mobile/team-4.jpg 1x, ./images-1/mobile/team-4@2x.jpg 2x"
                 type="image/jpg"
               />
-              <img src=".\images-1\mobile\team-4.jpg" alt="user photo" width="450" height="460" />
+              <img src="./images-1/mobile/team-4.jpg" alt="user photo" width="450" height="460" />
             </picture>
             <div class="comand__box">
               <h3 class="comand__name">Михаил Ермаков</h3>
@@ -554,94 +554,96 @@
         </ul>
       </section>
     </main>
-    <footer class="footer">
-      <div class="footer-tablet">
-        <div class="box-logo">
-          <div class="footer__logo">
-            <a href="" class="logo-footer"><span class="logo-web">Web</span>Studio</a>
+    <footer class="footer-bgr">
+      <div class="footer">
+        <div class="footer-tablet">
+          <div class="box-logo">
+            <div class="footer__logo">
+              <a href="" class="logo-footer"><span class="logo-web">Web</span>Studio</a>
+            </div>
+            <ul class="footer-address">
+              <li class="footer-city">
+                <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
+              </li>
+              <li class="footer-mail">
+                <a href="mailto:info@devstudio.com" class="footer-contacts">info@devstudio.com</a>
+              </li>
+              <li class="footer-tel">
+                <a href="tel:+380991111111" class="footer-contacts">+38 099 111 11 11</a>
+              </li>
+            </ul>
           </div>
-          <ul class="footer-address">
-            <li class="footer-city">
-              <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
-            </li>
-            <li class="footer-mail">
-              <a href="mailto:info@devstudio.com" class="footer-contacts">info@devstudio.com</a>
-            </li>
-            <li class="footer-tel">
-              <a href="tel:+380991111111" class="footer-contacts">+38 099 111 11 11</a>
-            </li>
-          </ul>
+          <div class="footer-icon">
+            <h2 class="call">ПРИСОЕДИНЯЙТЕСЬ</h2>
+            <ul class="social-media-footer">
+              <li class="social-media-item-footer">
+                <a
+                  class="social-media-link-footer"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="instagram"
+                >
+                  <svg class="icon" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-media-item-footer">
+                <a
+                  class="social-media-link-footer"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="twitter"
+                >
+                  <svg class="icon" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-media-item-footer">
+                <a
+                  class="social-media-link-footer"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="facebook"
+                >
+                  <svg class="icon" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-media-item-footer">
+                <a
+                  class="social-media-link-footer"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="linkedin"
+                >
+                  <svg class="icon" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="footer-icon">
-          <h2 class="call">ПРИСОЕДИНЯЙТЕСЬ</h2>
-          <ul class="social-media-footer">
-            <li class="social-media-item-footer">
-              <a
-                class="social-media-link-footer"
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="instagram"
-              >
-                <svg class="icon" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-media-item-footer">
-              <a
-                class="social-media-link-footer"
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="twitter"
-              >
-                <svg class="icon" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-media-item-footer">
-              <a
-                class="social-media-link-footer"
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="facebook"
-              >
-                <svg class="icon" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-media-item-footer">
-              <a
-                class="social-media-link-footer"
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="linkedin"
-              >
-                <svg class="icon" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+        <form class="mail-input">
+          <p class="mailing">Подпишитесь на рассылку</p>
+          <div class="input-box">
+            <input type="email" class="input-email" name="email" placeholder="E-mail" />
+            <button type="submit" class="footer-button-input">
+              Подписаться
+              <svg class="icon-input">
+                <use href="./images/symbol-defs.svg#icon-icon-telegram"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
-      <form class="mail-input">
-        <p class="mailing">Подпишитесь на рассылку</p>
-        <div class="input-box">
-          <input type="email" class="input-email" name="email" placeholder="E-mail" />
-          <button type="submit" class="footer-button-input">
-            Подписаться
-            <svg class="icon-input">
-              <use href="./images/symbol-defs.svg#icon-icon-telegram"></use>
-            </svg>
-          </button>
-        </div>
-      </form>
     </footer>
     <div class="beckdrop is-hidden" data-modal>
       <div class="modal">

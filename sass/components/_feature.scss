@@ -63,6 +63,9 @@
     width: 70px;
     height: 70px;
   }
+  .features-item__title {
+    text-align: start;
+  }
 }
 // Desktop
 @media screen and (min-width: 1200px) {
