@@ -133,7 +133,7 @@
 
 .agreement {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: var(--primari-text-color);
@@ -147,7 +147,7 @@
   display: inline-block;
   width: 15px;
   height: 15px;
-  margin-right: 10px;
+  margin-right: 8px;
   background-image: url('../images/vector.svg');
 }
 
@@ -208,11 +208,17 @@
   .modal {
     width: 450px;
   }
+  .icon-check {
+    margin-right: 10px;
+  }
 }
 //Desctop
 
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
+  }
+  .agreement {
+    font-size: 14px;
   }
 }
