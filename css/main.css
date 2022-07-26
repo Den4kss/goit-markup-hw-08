@@ -539,10 +539,11 @@ a {
     gap: 50px;
   }
   .menu .item {
+    position: relative;
     margin: 0 !important;
     padding: 28px 0;
   }
-  .menu .nav-current::after {
+  .nav-current::after {
     content: "";
     position: absolute;
     bottom: 0px;
